@@ -46,6 +46,10 @@ Expenses are saved locally in a file called `expenses.json` inside the project f
 
 Each local copy of the application has its own expense data.
 
+## Screenshot
+
+![Expense Tracker Demo](screenshots/expense-tracker-demo.png)
+
 ## About the Project
 
 This is an ongoing learning project. I built it to improve my Python programming skills and get more comfortable working on a complete application.
