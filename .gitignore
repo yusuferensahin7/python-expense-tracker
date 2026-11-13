@@ -1,0 +1,13 @@
+# Personal expense data
+expenses.json
+
+# Python cache files
+__pycache__/
+*.py[cod]
+
+# Virtual environments
+.venv/
+venv/
+
+# Environment variables
+.env
