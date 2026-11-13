@@ -66,6 +66,7 @@ def main():
 
 
 def add_expense(expenses):
+    """Collect expense details, add the expense and save the updated list."""
     while True:
         try:
             stored_expense = {}
@@ -100,6 +101,7 @@ def add_expense(expenses):
 
 
 def view_expenses(expenses):
+    """View each expense."""
     if not expenses:
         print("\nThere are no expenses to display\n")
         return
@@ -115,6 +117,7 @@ def view_expenses(expenses):
 
 
 def calculate_total(expenses):
+    """Calculate the total amount spent."""
     total = 0
 
     for expense in expenses:
@@ -124,6 +127,7 @@ def calculate_total(expenses):
 
 
 def calculate_category_spending(expenses):
+    """Calculate the total amount spent in each category."""
     spending = {}
 
     for expense in expenses:
@@ -140,6 +144,7 @@ def calculate_category_spending(expenses):
 
 
 def load_expenses():
+    """Load previously saved expenses from the JSON file."""
     try:
         with open("expenses.json", "r") as file:
             return json.load(file)
@@ -149,11 +154,13 @@ def load_expenses():
 
 
 def save_expenses(expenses):
+    """Save the current expense list to the JSON file."""
     with open("expenses.json", "w") as file:
         json.dump(expenses, file, indent=4)
 
 
 def edit_expense(expenses):
+    """Edit an existing expense."""
     if not expenses:
         print("There are no expenses to edit.")
         return
@@ -245,6 +252,7 @@ def edit_expense(expenses):
 
 
 def delete_expense(expenses):
+    """Delete an existing expense."""
     if not expenses:
         print("There are no expenses to delete.")
         return
